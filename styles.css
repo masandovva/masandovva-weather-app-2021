@@ -1,0 +1,127 @@
+.col-4 {
+  color: #d3e0ea;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 15px;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 5px;
+  border-radius: 37px;
+  border-color: #d3e0ea;
+  font-family: "Montserrat";
+  font-size: 13px;
+  line-height: unset;
+  background: #d3e0ea;
+}
+
+.col-md-auto {
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 10px;
+}
+h1 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+}
+h2,
+span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 70;
+}
+
+span.temperature {
+  font-size: 117px;
+}
+span.units {
+  position: relative;
+  top: -50px;
+  color: #d3e0ea;
+  font-size: 25px;
+}
+h2 {
+  margin-bottom: -29px;
+}
+a {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #d3e0ea;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  padding-top: 0px;
+  font-size: 15px;
+  margin-top: -20px;
+  margin-left: 0px;
+}
+.extraInf {
+  font-size: 15px;
+}
+.description {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -40px;
+}
+
+img {
+  width: 270px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 10px;
+  background-color: #d3e0ea;
+  border-radius: 190px;
+  margin-top: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 50px;
+}
+.container {
+  background: #aec9dd;
+  margin-top: 0px;
+  border-radius: 30px;
+  padding: 10px 10px;
+  font-family: "Montserrat";
+}
+
+.row {
+  margin: 30px;
+  font-weight: 270;
+  text-align: center;
+}
+
+.fiveDays {
+  font-weight: bolder;
+  margin-left: -10px;
+}
+
+.days {
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #d3e0ea;
+  border-radius: 55px;
+  margin-bottom: 5px;
+}
+
+.footer {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #6d7e8b;
+}
+body {
+  margin: 30px;
+}
