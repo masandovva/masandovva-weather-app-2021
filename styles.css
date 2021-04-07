@@ -7,7 +7,6 @@ body {
 
 button,
 input,
-optgroup,
 select,
 textarea {
   margin: 5px;
@@ -54,13 +53,12 @@ img {
 
 footer {
   font-size: 20px;
-  text-align: center;
-  padding: 50px;
+  text-align: left;
+  padding: 17px;
 }
 
 h2,
 span {
-  font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 70;
 }
@@ -70,7 +68,7 @@ span.temperature {
 }
 span.units {
   position: relative;
-  top: -50px;
+  top: -65px;
   color: #d3e0ea;
   font-size: 25px;
 }
@@ -88,12 +86,11 @@ span.units {
   font-weight: 200;
   padding-bottom: 10px;
 }
-.container {
+.weather-app-wrapper {
   background: #aec9dd;
   margin-top: 0px;
   border-radius: 30px;
   padding: 10px 10px;
-  font-family: "Montserrat";
 }
 
 .row {
@@ -104,7 +101,9 @@ span.units {
 
 .fiveDays {
   font-weight: bolder;
-  margin-left: -10px;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 40px;
 }
 
 .days {

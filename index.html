@@ -24,112 +24,116 @@
 
   <body>
     <div class="container">
-      <div class="weather-app">
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">Where you want to go?</div>
-          <form id="search-form">
-            <div class="offset-md-12 col-md-12">
-              <input
-                type="search"
-                placeholder="Search for a city"
-                autocomplete="off"
-                autofocus="on"
-                id="city-input"
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">Where you want to go?</div>
+            <form id="search-form">
+              <div class="offset-md-12 col-md-12">
+                <input
+                  type="search"
+                  placeholder="Search for a city"
+                  autocomplete="off"
+                  autofocus="on"
+                  id="city-input"
+                />
+                <input type="submit" value="Search" />
+                <button class="w-60" id="current-location-button">
+                  Current
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5">
+              <img
+                class="mainWeather"
+                src="https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif"
+                alt="sun"
               />
-              <input type="submit" value="Search" />
-              <button class="w-60" id="current-location-button">Current</button>
             </div>
-          </form>
-        </div>
 
-        <div class="row">
-          <div class="col-1"></div>
-          <div class="col-5">
-            <img
-              class="mainWeather"
-              src="https://media1.giphy.com/media/fwR54Wq7dYu9VXKiAF/giphy.gif"
-              alt="sun"
-            />
-          </div>
+            <div class="col-4">
+              <h1>Sunday 22:00</h1>
+              <h2 id="city">Mérida</h2>
+              <span class="temperature" id="temperature">19</span>
+              <span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+              <ul>
+                <li class="description" id="description">currently sunny</li>
+                <li>
+                  <strong> Precipitation: </strong
+                  ><span class="extraInf" id="maxTemp">0</span>%
+                </li>
+                <li>
+                  <strong> Humidity: </strong
+                  ><span class="extraInf" id="humidity">35</span>%
+                </li>
+                <li>
+                  <strong>Wind speed: </strong
+                  ><span class="extraInf" id="wind">35</span>km/h
+                </li>
+              </ul>
+            </div>
 
-          <div class="col-4">
-            <h1>Sunday 22:00</h1>
-            <h2 id="city">Mérida</h2>
-            <span class="temperature" id="temperature">19</span>
-            <span class="units">
-              <a href="#" id="celsius-link">°C</a> |
-              <a href="#" id="fahrenheit-link">°F</a>
-            </span>
-            <ul>
-              <li class="description" id="description">currently sunny</li>
-              <li>
-                <strong> Max. Temperature: </strong
-                ><span class="extraInf" id="maxTemp">0</span>%
-              </li>
-              <li>
-                <strong> Humidity: </strong
-                ><span class="extraInf" id="humidity">35</span>%
-              </li>
-              <li>
-                <strong>Wind: </strong
-                ><span class="extraInf" id="wind">35</span>km/h
-              </li>
-            </ul>
-          </div>
-
-          <div class="row fiveDays">
-            <div class="col-sm">
-              <img
-                class="days"
-                src="https://media3.giphy.com/media/MBNaeXPprs8lBb4fjQ/giphy.gif"
-                alt="smallRain"
-              />
-              MON<br /><strong>17<sup>°C</sup></strong>
-            </div>
-            <div class="col-sm">
-              <img
-                class="days"
-                src="https://media4.giphy.com/media/Qrdep630dyOucGsEsB/giphy.gif"
-                alt="clouds"
-              />TUE<br /><strong>14<sup>°C</sup></strong>
-            </div>
-            <div class="col-sm">
-              <img
-                class="days"
-                src="https://media0.giphy.com/media/3ov9jLYWb4zCjGfqIE/giphy.gif"
-                alt="sunny"
-              />WED <br /><strong>20<sup>°C</sup></strong>
-            </div>
-            <div class="col-sm">
-              <img
-                class="days"
-                src="https://thumbs.gfycat.com/CompleteCavernousIrukandjijellyfish-size_restricted.gif"
-                alt="cold"
-              />THUR<br /><strong>4<sup>°C</sup></strong>
-            </div>
-            <div class="col-sm">
-              <img
-                class="days"
-                src="https://media0.giphy.com/media/MDaMURfqSp7H1mQ1Ga/giphy.gif"
-                alt="rain"
-              />FRI<br /><strong>9<sup>°C</sup></strong>
+            <div class="row fiveDays">
+              <div class="col-sm">
+                <img
+                  class="days"
+                  src="https://media3.giphy.com/media/MBNaeXPprs8lBb4fjQ/giphy.gif"
+                  alt="smallRain"
+                />
+                MON<br />
+                <strong>17<sup>°C</sup></strong>
+              </div>
+              <div class="col-sm">
+                <img
+                  class="days"
+                  src="https://media4.giphy.com/media/Qrdep630dyOucGsEsB/giphy.gif"
+                  alt="clouds"
+                />TUE<br /><strong>14<sup>°C</sup></strong>
+              </div>
+              <div class="col-sm">
+                <img
+                  class="days"
+                  src="https://media0.giphy.com/media/3ov9jLYWb4zCjGfqIE/giphy.gif"
+                  alt="sunny"
+                />WED <br /><strong>20<sup>°C</sup></strong>
+              </div>
+              <div class="col-sm">
+                <img
+                  class="days"
+                  src="https://thumbs.gfycat.com/CompleteCavernousIrukandjijellyfish-size_restricted.gif"
+                  alt="cold"
+                />THUR<br /><strong>4<sup>°C</sup></strong>
+              </div>
+              <div class="col-sm">
+                <img
+                  class="days"
+                  src="https://media0.giphy.com/media/MDaMURfqSp7H1mQ1Ga/giphy.gif"
+                  alt="rain"
+                />FRI<br /><strong>9<sup>°C</sup></strong>
+              </div>
             </div>
           </div>
-
-          <footer>
-            <a
-              class="footer"
-              href="https://github.com/masandovva/masandovva-weather-app-2021"
-              target="_blank"
-            >
-              Open-source code</a
-            >
-            , by Mariana Sandoval
-          </footer>
-
-          <script src="index.js"></script>
         </div>
       </div>
+      <footer>
+        <a
+          class="footer"
+          href="https://github.com/masandovva/masandovva-weather-app-2021"
+          target="_blank"
+        >
+          Open-source code</a
+        >
+        , by Mariana Sandoval
+      </footer>
+
+      <script src="index.js"></script>
     </div>
   </body>
 </html>
