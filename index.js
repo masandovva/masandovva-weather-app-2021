@@ -23,7 +23,7 @@ function formatDate(timestamp) {
 }
 
 function showCityInformation(response) {
-  console.log(response.data);
+  let iconElement = document.querySelector("#icon");
   // let cityElement = document.querySelector("#city"); is another option.
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -39,6 +39,10 @@ function showCityInformation(response) {
     response.data.weather[0].description;
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
+  );
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
 }
 
