@@ -109,3 +109,5 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+//function formatDate(timestamp){//calculate the date return "friday 5:00"}
