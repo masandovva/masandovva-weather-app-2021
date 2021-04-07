@@ -10,7 +10,7 @@ function showCityInformation(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
 }
 
 //WEEK 5
