@@ -27,7 +27,7 @@ h2 {
   margin-bottom: -29px;
 }
 a {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 10px;
   color: #d3e0ea;
   text-decoration: none;
@@ -63,10 +63,18 @@ span {
   font-weight: 70;
 }
 
-span.temperature {
+sup {
+  position: relative;
+}
+
+.temperature {
   font-size: 117px;
 }
-span.units {
+.week-temperature {
+  font-size: 20px;
+  font-weight: 350;
+}
+.units {
   position: relative;
   top: -65px;
   color: #d3e0ea;
