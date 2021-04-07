@@ -1,15 +1,8 @@
 body {
   font-family: "Montserrat";
   margin: 0 auto;
-
+  margin: 30px;
   background-size: 90;
-}
-
-.col-4 {
-  color: #d3e0ea;
-  margin-top: 10px;
-  text-align: left;
-  margin-left: 15px;
 }
 
 button,
@@ -25,32 +18,11 @@ textarea {
   background: #d3e0ea;
 }
 
-.col-md-auto {
-  font-size: 20px;
-  font-weight: 200;
-  padding-bottom: 10px;
-}
 h1 {
   font-size: 25px;
   padding: 0;
   margin: 0;
   font-weight: lighter;
-}
-h2,
-span {
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
-  font-weight: 70;
-}
-
-span.temperature {
-  font-size: 117px;
-}
-span.units {
-  position: relative;
-  top: -50px;
-  color: #d3e0ea;
-  font-size: 25px;
 }
 h2 {
   margin-bottom: -29px;
@@ -68,14 +40,6 @@ ul {
   margin-top: -20px;
   margin-left: 0px;
 }
-.extraInf {
-  font-size: 15px;
-}
-.description {
-  font-size: 30px;
-  font-weight: lighter;
-  margin-top: -40px;
-}
 
 img {
   width: 270px;
@@ -92,6 +56,37 @@ footer {
   font-size: 20px;
   text-align: center;
   padding: 50px;
+}
+
+h2,
+span {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+  font-weight: 70;
+}
+
+span.temperature {
+  font-size: 117px;
+}
+span.units {
+  position: relative;
+  top: -50px;
+  color: #d3e0ea;
+  font-size: 25px;
+}
+
+.extraInf {
+  font-size: 15px;
+}
+.description {
+  font-size: 30px;
+  font-weight: lighter;
+  margin-top: -40px;
+}
+.col-md-auto {
+  font-size: 20px;
+  font-weight: 200;
+  padding-bottom: 10px;
 }
 .container {
   background: #aec9dd;
@@ -128,6 +123,10 @@ footer {
   font-weight: lighter;
   color: #6d7e8b;
 }
-body {
-  margin: 30px;
+
+.col-4 {
+  color: #d3e0ea;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 15px;
 }
