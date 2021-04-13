@@ -79,7 +79,7 @@ function searchLocation(position) {
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 19;
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
   // temperature = Number(temperature); // is like in Python convert string into int or float number :)
   // temperatureElement.innerHTML = Math.round((temperature - 32) * (5 / 9));
 }
@@ -98,14 +98,17 @@ function convertToFahrenheit(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
 
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  // temperature = Number(temperature); // is like in Python convert string into int or float number :)
+  // temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
 }
 
 let celsiusTemperature = null;
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("New York");
