@@ -25,6 +25,7 @@ function formatDate(timestamp) {
 function showCityInformation(response) {
   console.log(response.data);
   let iconElement = document.querySelector("#icon");
+  celsiusTemperature = response.data.main.temp;
   // let cityElement = document.querySelector("#city"); is another option.
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -42,10 +43,7 @@ function showCityInformation(response) {
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
-  iconElement.setAttribute(
-    "src",
-    `icons/${response.data.weather[0].icon}@2x.png`
-  );
+  iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
 }
 
 //WEEK 5
@@ -78,15 +76,6 @@ function searchLocation(position) {
   axios.get(apiUrl).then(showCityInformation);
 }
 
-// Function Bonus Feature
-function convertToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
-  temperatureElement.innerHTML = 66;
-  // temperature = Number(temperature); // is like in Python convert string into int or float number :)
-  // temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
-}
-
 function convertToCelsius(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
@@ -95,19 +84,31 @@ function convertToCelsius(event) {
   // temperatureElement.innerHTML = Math.round((temperature - 32) * (5 / 9));
 }
 
-//Feature #2
-
+//global functions is accesible from inside functions . functions can create variables but the variables that are functions are being created only available inside of a function but this specific variables ARE GLOBAL so we can acces to the variables from the inside .
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-searchCity("New York");
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 // Bonus Feaature
+
+// Function Bonus Feature
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+
+  // temperature = Number(temperature); // is like in Python convert string into int or float number :)
+  // temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
+}
+
+let celsiusTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
+
+searchCity("New York");
