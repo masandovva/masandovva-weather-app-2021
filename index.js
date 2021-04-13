@@ -23,6 +23,7 @@ function formatDate(timestamp) {
 }
 
 function showCityInformation(response) {
+  console.log(response.data);
   let iconElement = document.querySelector("#icon");
   // let cityElement = document.querySelector("#city"); is another option.
   document.querySelector("#city").innerHTML = response.data.name;
@@ -37,6 +38,7 @@ function showCityInformation(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].description;
+  document.querySelector("#country").innerHTML = response.data.sys.country;
   document.querySelector("#date").innerHTML = formatDate(
     response.data.dt * 1000
   );
