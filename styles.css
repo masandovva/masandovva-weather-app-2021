@@ -80,9 +80,17 @@ sup {
 .temperature {
   font-size: 117px;
 }
+.active {
+  color: #6d7e8b;
+  cursor: default;
+}
+.active:hover {
+  text-decoration: none;
+}
 .week-temperature {
   font-size: 20px;
   font-weight: 350;
+  color: #6d7e8b;
 }
 .units {
   position: relative;
