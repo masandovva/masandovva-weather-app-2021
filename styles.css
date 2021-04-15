@@ -47,7 +47,7 @@ ul {
   list-style-type: none;
   padding: 5px;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: -25px;
   margin-left: 0px;
 }
 
@@ -58,7 +58,7 @@ img {
   padding: 12px 10px;
   background-color: #d3e0ea;
   border-radius: 190px;
-  margin-top: 40px;
+  margin-top: 120px;
   margin-right: 10px;
 }
 
@@ -68,12 +68,8 @@ footer {
   padding: 17px;
 }
 
-h2,
 span {
-  font-size: 70px;
-  font-weight: 70;
-}
-span {
+  font-weight: 100;
   position: relative;
 }
 
@@ -81,13 +77,39 @@ sup {
   position: relative;
 }
 
-.live-date {
-  font-size: 70px;
+.city {
+  font-size: 80px;
   font-weight: 70;
-  font-size: 20px;
+}
+.row {
+  margin: 10px;
+  font-weight: 270;
+  text-align: center;
+}
+.col-4 {
+  color: #d3e0ea;
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 15px;
+}
+.live-date {
+  font-weight: 70;
+  font-size: 25px;
   padding: 0;
   margin: 0;
   font-weight: lighter;
+}
+.description {
+  margin-top: 10px;
+  margin-bottom: -20px;
+  font-size: 40px;
+  font-weight: lighter;
+}
+.last-updated {
+  padding: 5px;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-left: 0px;
 }
 
 .weather-forecast {
@@ -107,7 +129,7 @@ sup {
 }
 
 .temperature {
-  font-size: 100px;
+  font-size: 117px;
 }
 .active {
   color: #6d7e8b;
@@ -119,7 +141,7 @@ sup {
 
 .units {
   position: relative;
-  top: -55px;
+  top: -60px;
   color: #d3e0ea;
   font-size: 25px;
 }
@@ -127,10 +149,7 @@ sup {
 .extraInf {
   font-size: 15px;
 }
-.description {
-  font-size: 30px;
-  font-weight: lighter;
-}
+
 .col-md-auto {
   font-size: 20px;
   font-weight: 200;
@@ -141,12 +160,6 @@ sup {
   margin-top: 0px;
   border-radius: 30px;
   padding: 10px 10px;
-}
-
-.row {
-  margin: 10px;
-  font-weight: 270;
-  text-align: center;
 }
 
 .days {
@@ -164,11 +177,4 @@ sup {
   font-size: 20px;
   font-weight: lighter;
   color: #6d7e8b;
-}
-
-.col-4 {
-  color: #d3e0ea;
-  margin-top: 10px;
-  text-align: left;
-  margin-left: 15px;
 }
