@@ -2,6 +2,23 @@ function formatDate(timestamp) {
   //calculate the date real time
   let date = new Date(timestamp);
   let numDay = date.getDate();
+  let year = date.getFullYear();
+  let months = [
+    " January",
+    " February",
+    " March",
+    " April",
+    " May",
+    " June",
+    " July",
+    " August",
+    " September",
+    " October",
+    " November",
+    " December",
+  ];
+  let mes = months[date.getMonth()];
+
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -11,16 +28,17 @@ function formatDate(timestamp) {
     minutes = `0${minutes}`;
   }
   let days = [
-    "Sunday ",
-    "Monday ",
-    "Tuesday ",
-    "Wednesday ",
-    "Thursday ",
-    "Friday ",
-    "Saturday ",
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day} ${numDay}, ${hours}:${minutes}`;
+
+  return `${day},${mes} ${numDay}, ${year} - ${hours}:${minutes}`;
 }
 
 function showCityInformation(response) {

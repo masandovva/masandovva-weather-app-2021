@@ -19,20 +19,22 @@ textarea {
 
 h1 {
   font-size: 20px;
-  padding: 0;
   margin: 0;
   font-weight: lighter;
+  padding-left: 5px;
 }
 h2 {
   margin-bottom: -29px;
+  margin-top: -10px;
+  padding: 0px;
 }
 h3 {
   list-style-type: none;
-  padding: 0;
   font-size: 15px;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 0px;
   text-transform: capitalize;
+  padding-left: 5px;
 }
 a {
   font-size: 25px;
@@ -43,7 +45,7 @@ a {
 
 ul {
   list-style-type: none;
-  padding: 0;
+  padding: 5px;
   font-size: 15px;
   margin-top: 10px;
   margin-left: 0px;
@@ -86,7 +88,7 @@ sup {
 }
 
 .temperature {
-  font-size: 117px;
+  font-size: 100px;
 }
 .active {
   color: #6d7e8b;
@@ -102,7 +104,7 @@ sup {
 }
 .units {
   position: relative;
-  top: -65px;
+  top: -55px;
   color: #d3e0ea;
   font-size: 25px;
 }
