@@ -1,6 +1,7 @@
 function formatDate(timestamp) {
   //calculate the date real time
   let date = new Date(timestamp);
+  let numDay = date.getDate();
   let hours = date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
@@ -19,7 +20,7 @@ function formatDate(timestamp) {
     "Saturday ",
   ];
   let day = days[date.getDay()];
-  return `${day}, ${hours}:${minutes}`;
+  return `${day} ${numDay}, ${hours}:${minutes}`;
 }
 
 function showCityInformation(response) {
@@ -82,8 +83,6 @@ function convertToCelsius(event) {
   fahrenheitLink.classList.remove("active");
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
-  // temperature = Number(temperature); // is like in Python convert string into int or float number :)
-  // temperatureElement.innerHTML = Math.round((temperature - 32) * (5 / 9));
 }
 
 //global functions is accesible from inside functions . functions can create variables but the variables that are functions are being created only available inside of a function but this specific variables ARE GLOBAL so we can acces to the variables from the inside .
@@ -92,9 +91,7 @@ form.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-// Bonus Feaature
 
-// Function Bonus Feature
 function convertToFahrenheit(event) {
   event.preventDefault();
   celsiusLink.classList.remove("active");
@@ -102,9 +99,6 @@ function convertToFahrenheit(event) {
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-
-  // temperature = Number(temperature); // is like in Python convert string into int or float number :)
-  // temperatureElement.innerHTML = Math.round((temperature * 9) / 5 + 32);
 }
 
 let celsiusTemperature = null;

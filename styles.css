@@ -26,19 +26,27 @@ h1 {
 h2 {
   margin-bottom: -29px;
 }
+h3 {
+  list-style-type: none;
+  padding: 0;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-left: 0px;
+  text-transform: capitalize;
+}
 a {
   font-size: 25px;
   margin-top: 10px;
   color: #d3e0ea;
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   font-size: 15px;
-  margin-top: -20px;
+  margin-top: 10px;
   margin-left: 0px;
-  text-transform: capitalize;
 }
 
 img {
@@ -105,7 +113,6 @@ sup {
 .description {
   font-size: 30px;
   font-weight: lighter;
-  margin-top: -40px;
 }
 .col-md-auto {
   font-size: 20px;
