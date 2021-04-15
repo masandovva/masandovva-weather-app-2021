@@ -73,6 +73,9 @@ span {
   font-size: 70px;
   font-weight: 70;
 }
+span {
+  position: relative;
+}
 
 sup {
   position: relative;
@@ -87,6 +90,22 @@ sup {
   font-weight: lighter;
 }
 
+.weather-forecast {
+  font-weight: bolder;
+  margin: 0 auto;
+  padding: 10px;
+  padding-top: 40px;
+}
+
+.weather-forecast-temperature {
+  font-size: 20px;
+  color: #6d7e8b;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.3;
+}
+
 .temperature {
   font-size: 100px;
 }
@@ -97,11 +116,7 @@ sup {
 .active:hover {
   text-decoration: none;
 }
-.week-temperature {
-  font-size: 20px;
-  font-weight: 350;
-  color: #6d7e8b;
-}
+
 .units {
   position: relative;
   top: -55px;
@@ -129,16 +144,9 @@ sup {
 }
 
 .row {
-  margin: 30px;
+  margin: 10px;
   font-weight: 270;
   text-align: center;
-}
-
-.fiveDays {
-  font-weight: bolder;
-  margin: 0 auto;
-  padding: 10px;
-  padding-top: 40px;
 }
 
 .days {
