@@ -2,7 +2,6 @@ body {
   font-family: "Montserrat";
   margin: 0 auto;
   margin: 30px;
-  background-size: 90;
 }
 
 button,
@@ -12,13 +11,12 @@ textarea {
   margin: 5px;
   border-radius: 37px;
   border-color: #d3e0ea;
-  font-size: 13px;
+  font-size: 10px;
   line-height: unset;
   background: #d3e0ea;
 }
 
 h1 {
-  font-size: 20px;
   margin: 0;
   font-weight: lighter;
   padding-left: 5px;
@@ -30,14 +28,14 @@ h2 {
 }
 h3 {
   list-style-type: none;
-  font-size: 15px;
+  font-size: 7px;
   margin-top: 15px;
   margin-left: 0px;
   text-transform: capitalize;
   padding-left: 5px;
 }
 a {
-  font-size: 25px;
+  font-size: 15px;
   margin-top: 10px;
   color: #d3e0ea;
   text-decoration: none;
@@ -46,24 +44,24 @@ a {
 ul {
   list-style-type: none;
   padding: 5px;
-  font-size: 15px;
+  font-size: 10px;
   margin-top: -25px;
   margin-left: 0px;
 }
 
 img {
-  width: 270px;
+  width: 135px;
   display: block;
   margin: 0 auto;
   padding: 12px 10px;
   background-color: #d3e0ea;
   border-radius: 190px;
-  margin-top: 90px;
+  margin-top: 30px;
   margin-right: 10px;
 }
 
 footer {
-  font-size: 20px;
+  font-size: 10px;
   text-align: left;
   padding: 17px;
 }
@@ -77,8 +75,12 @@ sup {
   position: relative;
 }
 
+.container {
+  max-width: 800px;
+}
+
 .city {
-  font-size: 80px;
+  font-size: 40px;
   font-weight: 200;
 }
 .row {
@@ -88,26 +90,26 @@ sup {
 }
 .col-4 {
   color: #d3e0ea;
-  margin-top: 40px;
+  margin-top: -5px;
   text-align: left;
   margin-left: 15px;
 }
 .live-date {
   font-weight: 70;
-  font-size: 25px;
+  font-size: 15px;
   padding: 0;
   margin: 0;
   font-weight: lighter;
 }
 .description {
-  margin-top: 10px;
-  margin-bottom: -20px;
-  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: -10px;
+  font-size: 17px;
   font-weight: lighter;
 }
 .last-updated {
   padding: 5px;
-  font-size: 27px;
+  font-size: 15px;
   margin-top: -10px;
   margin-left: 0px;
 }
@@ -119,7 +121,7 @@ sup {
 }
 
 .weather-forecast-temperatures {
-  font-size: 20px;
+  font-size: 10px;
   color: #6d7e8b;
 }
 
@@ -128,7 +130,7 @@ sup {
 }
 
 .temperature {
-  font-size: 117px;
+  font-size: 60px;
 }
 .active {
   color: #6d7e8b;
@@ -140,17 +142,17 @@ sup {
 
 .units {
   position: relative;
-  top: -60px;
+  top: -30px;
   color: #d3e0ea;
-  font-size: 25px;
-}
-
-.extraInf {
   font-size: 15px;
 }
 
+.extraInf {
+  font-size: 10px;
+}
+
 .col-md-auto {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 200;
   padding-bottom: 10px;
 }
@@ -162,8 +164,8 @@ sup {
 }
 
 .days {
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   display: block;
   margin: 0 auto;
   padding: 10px;
@@ -173,7 +175,7 @@ sup {
 }
 
 .footer {
-  font-size: 20px;
+  font-size: 10px;
   font-weight: lighter;
   color: #6d7e8b;
 }
