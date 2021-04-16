@@ -53,7 +53,7 @@ function displayForecast() {
     forecastHTML =
       forecastHTML +
       `              
-                <div class="col-2">
+                <div class="col-sm">
                   <img
                     class="days"
                     src="https://media3.giphy.com/media/MBNaeXPprs8lBb4fjQ/giphy.gif"
