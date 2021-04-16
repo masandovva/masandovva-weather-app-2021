@@ -79,7 +79,7 @@ sup {
 
 .city {
   font-size: 80px;
-  font-weight: 70;
+  font-weight: 200;
 }
 .row {
   margin: 10px;
@@ -102,12 +102,12 @@ sup {
 .description {
   margin-top: 10px;
   margin-bottom: -20px;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: lighter;
 }
 .last-updated {
   padding: 5px;
-  font-size: 20px;
+  font-size: 27px;
   margin-top: -10px;
   margin-left: 0px;
 }
@@ -115,11 +115,10 @@ sup {
 .weather-forecast {
   font-weight: bolder;
   margin: 0 auto;
-  padding: 10px;
-  padding-top: 40px;
+  padding: 20px;
 }
 
-.weather-forecast-temperature {
+.weather-forecast-temperatures {
   font-size: 20px;
   color: #6d7e8b;
 }

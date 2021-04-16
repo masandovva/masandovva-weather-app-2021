@@ -45,6 +45,41 @@ function lastUpdated(timestamp) {
   return `${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let days = ["FRI", "SAT", "SUN", "MON", "TUE"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `              
+                <div class="col-2">
+                  <img
+                    class="days"
+                    src="https://media3.giphy.com/media/MBNaeXPprs8lBb4fjQ/giphy.gif"
+                    alt=""
+                  />
+                  <div class="weather-forecast-date">${day}</div>
+                  <div class="weather-forecast-temperatures">
+                    <strong
+                      class="weather-forecast-temperature-max"
+                      id="max-weather-celsius"
+                      >17<sup>°</sup></strong
+                    >
+                    |
+                    <strong
+                      class="weather-forecast-temperature-min"
+                      id="min-weather-celsius"
+                    >
+                      11<sup>°</sup></strong
+                    >
+                </div>
+            </div> `;
+  });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showCityInformation(response) {
   console.log(response.data);
   let iconElement = document.querySelector("#icon");
@@ -138,3 +173,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
 searchCity("New York");
+displayForecast();
