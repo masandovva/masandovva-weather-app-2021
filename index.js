@@ -59,14 +59,14 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 5) {
+    if (index < 6 && index > 0) {
       forecastHTML =
         forecastHTML +
         `              
                 <div class="col-sm">
                   <img
                     class="days"
-                    src= "icons/${forecastDay.weather[0].icon}.png";
+                    src= "icons/${forecastDay.weather[0].icon}.gif";
                     alt=""
                   />
                   <div class="weather-forecast-date">${dayDisplayed(
@@ -125,7 +125,7 @@ function showCityInformation(response) {
   document.querySelector("#last-updated").innerHTML = lastUpdated(
     response.data.dt * 1000
   );
-  iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
+  iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.gif`);
 
   getForecast(response.data.coord);
 }
@@ -192,5 +192,5 @@ fahrenheitLink.addEventListener("click", convertToFahrenheit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", convertToCelsius);
 
-searchCity("New York");
+searchCity("Hawaii");
 displayForecast();
