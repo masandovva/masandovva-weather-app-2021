@@ -45,7 +45,8 @@ function lastUpdated(timestamp) {
   return `${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data.daily);
   let forecastElement = document.querySelector("#forecast");
   let days = ["FRI", "SAT", "SUN", "MON", "TUE"];
   let forecastHTML = `<div class="row">`;
@@ -80,8 +81,14 @@ function displayForecast() {
   forecastElement.innerHTML = forecastHTML;
 }
 
+function getForecast(coordinates) {
+  let apiKey = "0d40b598540d71d8dcaf321e85237ab2";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  console.log(apiUrl);
+  axios.get(apiUrl).then(displayForecast);
+}
+
 function showCityInformation(response) {
-  console.log(response.data);
   let iconElement = document.querySelector("#icon");
   celsiusTemperature = response.data.main.temp;
   // let cityElement = document.querySelector("#city"); is another option.
@@ -108,6 +115,8 @@ function showCityInformation(response) {
     response.data.dt * 1000
   );
   iconElement.setAttribute("src", `icons/${response.data.weather[0].icon}.png`);
+
+  getForecast(response.data.coord);
 }
 
 //WEEK 5
