@@ -66,9 +66,8 @@ img {
   display: block;
   margin: 0 auto;
   padding: 12px 10px;
-  background-color: #d3e0ea;
   border-radius: 190px;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-right: 10px;
 }
 
@@ -88,7 +87,7 @@ sup {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin-top: 20px;
 }
 
@@ -176,19 +175,19 @@ sup {
   padding-bottom: 10px;
 }
 .weather-app-wrapper {
-  background: #aec9dd;
+  background: #cbdae0;
   margin-top: 10px;
   border-radius: 30px;
   padding: 10px 10px;
 }
 
 .days {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   display: block;
   margin: 0 auto;
   padding: 10px;
-  background-color: #d3e0ea;
+
   border-radius: 55px;
   margin-bottom: 5px;
 }
