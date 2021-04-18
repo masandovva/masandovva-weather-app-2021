@@ -3,7 +3,6 @@ body {
   margin: 0 auto;
   margin: 30px;
 }
-
 button,
 input,
 select,
@@ -15,7 +14,6 @@ textarea {
   line-height: unset;
   background: #d3e0ea;
 }
-
 h1 {
   color: black;
   font-size: 15px;
@@ -27,7 +25,7 @@ h1 {
 }
 h2 {
   margin-bottom: -29px;
-  margin-top: 35px;
+  margin-top: 57px;
   padding: 0px;
   color: black;
 }
@@ -40,7 +38,6 @@ h3 {
   padding-left: 5px;
   color: black;
 }
-
 h1,
 h4 {
   line-height: unset;
@@ -51,7 +48,6 @@ a {
   color: #fff;
   text-decoration: none;
 }
-
 ul {
   list-style-type: none;
   padding: 5px;
@@ -60,37 +56,31 @@ ul {
   margin-left: 0px;
   color: black;
 }
-
 img {
   width: 200px;
   display: block;
   margin: 0 auto;
   padding: 12px 10px;
   border-radius: 190px;
-  margin-top: 0px;
+  margin-top: 25px;
   margin-right: 10px;
 }
-
 footer {
   font-size: 10px;
   text-align: left;
   padding: 17px;
 }
-
 span {
   position: relative;
   font-size: 15px;
 }
-
 sup {
   position: relative;
 }
-
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin-top: 20px;
 }
-
 .city {
   font-size: 47px;
   font-weight: 200;
@@ -98,6 +88,7 @@ sup {
 }
 .row {
   margin: 0px;
+  margin-top: -25px;
   margin-bottom: 5px;
   font-weight: 270;
   text-align: center;
@@ -123,28 +114,23 @@ sup {
   font-weight: lighter;
   color: black;
 }
-
 .weather-forecast {
   font-weight: bolder;
   margin: 0 auto;
   padding: 20px;
 }
-
 .weather-forecast-temperatures {
   font-size: 15px;
   color: black;
 }
-
 .weather-forecast-temperature-min {
   opacity: 0.3;
   color: black;
 }
-
 .weather-forecast-date {
   font-size: 15px;
   color: black;
 }
-
 .temperature {
   font-size: 60px;
   color: black;
@@ -156,44 +142,52 @@ sup {
 .active:hover {
   text-decoration: none;
 }
-
 .units {
   position: relative;
   top: -30px;
   color: #d3e0ea;
   font-size: 15px;
 }
-
 .extraInf {
   font-size: 10px;
   color: black;
 }
-
 .col-md-auto {
   font-size: 10px;
   font-weight: 200;
   padding-bottom: 10px;
 }
 .weather-app-wrapper {
-  background: #cbdae0;
-  margin-top: 10px;
+  background: #aec9dd;
   border-radius: 30px;
-  padding: 10px 10px;
+  position: relative;
+  overflow: hidden;
 }
-
+.weather-app {
+  position: relative;
+  margin-top: 10px;
+  padding: 10px 10px;
+  z-index: 2;
+}
 .days {
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   display: block;
   margin: 0 auto;
   padding: 10px;
-
   border-radius: 55px;
   margin-bottom: 5px;
 }
-
 .footer {
   font-size: 10px;
   font-weight: lighter;
   color: #6d7e8b;
+}
+.video-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 1;
 }

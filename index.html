@@ -18,13 +18,14 @@
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-
     <title>Weather app</title>
   </head>
-
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
+        <video autoplay muted loop class="video-bg">
+          <source src="video/Weather-background.mp4" type="video/mp4" />
+        </video>
         <div class="weather-app">
           <div class="row justify-content-md-center">
             <h1 style="margin-top: 20px">
@@ -49,7 +50,6 @@
               </div>
             </form>
           </div>
-
           <div class="row">
             <div class="col-1"></div>
             <div class="col-5">
@@ -60,11 +60,9 @@
                 alt="description"
               />
             </div>
-
             <div class="col-4">
               <h2 class="city" id="city">New York</h2>
               <h3 class="description" id="description">currently sunny</h3>
-
               <span class="temperature" id="temperature">19</span>
               <span class="units">
                 <a href="#" id="celsius-link" class="active">°C</a> |
@@ -114,7 +112,6 @@
           Netlify.
         </a>
       </footer>
-
       <script src="index.js"></script>
     </div>
   </body>
